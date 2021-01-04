@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+.container {
+    background: #fff;
+    width: 600px;
+    position: relative;
+    left: 50%;
+    right: 50% !important;
+    transform: translate(-50%, 0%);
+
+}
+
+.topbar {
+    background: #fff;
+    padding: 15px 37.5px 15px 37.5px;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: #222;
+}
+
+.topbar .menu-right {
+    float: right;
+    position: relative;
+    top: -40px !important;
+}
+
+.menu-right a {
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+/* home */
+.home {
+    position: relative;
+    display: block;
+    height: 400px;
+    background: url(../../assets/bg_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.home::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.home .content {
+    color: white;
+    z-index: 1;
+    padding: 50px 20px;
+}
+
+.home .content img {
+    height: 60px;
+    width: 60px;
+}
+
+.home .content h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.home .content p {
+    line-height: 30px;
+}
+
+/* services */
+
+.service {
+    text-align: center;
+    background-color: #fff;
+    color: #222;
+    padding: 20px;
+}
+
+.service h3 {
+    text-transform: uppercase;
+}
+
+.service p {
+    color: rgb(109, 109, 109);
+    line-height: 25px;
+}
+
+.service .card-block {
+    display: flex;
+}
+
+.card-block .card {
+    padding: 20px;
+}
+
+.service .card-block .card:nth-child(even) {
+    background-color: #ebebeb;
+}
+
+.service .card-block .card:nth-child(odd) {
+    background: #f7f7f7;
+}
+
+/* business */
+.business {
+    display: flex;
+    transform: translate(0%, 15%);
+    background-color: #e9e6e6;
+    width: 600px;
+    height: 300px;
+    margin-left: -55px;
+}
+
+.business-image {
+    transform: translate(12%, 10%);
+}
+
+.business-text {
+    transform: translate(10%, 10%);
+    max-width: 300px;
+}
+
+.business-text button {
+    transform: translate(-100%, 0%);
+    color: white;
+    background-color: blue;
+    border: collapse;
+    padding: 10px;
+    border-width: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 800;
+    margin-left: 80px;
+}
+
+/* projects */
+.project-text {
+    position: relative;
+    margin-top: 80px;
+}
+.project .project-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-gap: 40px;
+    margin-left: -30px;
+}
+
+/* blog */
+.blog-content {
+    display: flex;
+}
+
+.blog-content1 {
+    margin-left: -25px;
+}
+
+.blog-content2 {
+    margin-left: 20px;
+}
+
+.blog-content button {
+    background-color: blue;
+    border: collapse;
+    padding: 9px;
+    border-width: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+}
+
+/* team */
+.team {
+    background: #ece5e5;
+    width: 600px;
+    margin-left: -58px;
+}
+.team-cards {
+    display: flex;
+}
+.team-cards .card-2 {
+    margin-left: 15px;
+}
+.team-cards .card-3 {
+    margin-left: 15px;
+}
+
+/* feature */
+.feature {
+    display: flex;
+    
+}
+.feature-text1,
+.feature-text3,
+.feature-text5 {
+    display: flex;    
+    margin-left: 10px;
+}
+.feature-text2,
+.feature-text4,
+.feature-text6 {
+    margin-top: -20px;
+}
+
+/* design */
+.design {
+    background: blue;
+    margin-left: -3.5em;
+    margin-right: -3.5em;
+    height: 220px;
+    color: white;
+}
+.design button {
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: 800;
+}
+/* footer */
+footer {
+    height: 400px;
+    background-color: black;
+    position: relative;
+    margin-top: -35px;
+}
+
+.foot {
+    display: flex;
+    color: white;
+}
+.foot .about {
+    text-align: center;
+    width: 50%;
+    padding-left: 5%;
+}
+.foot .contact {
+    max-width: 40%;
+    padding-left: 7%;
+}
+.foot .useful {
+    padding-left: 10px;
+}
+.foot .useful a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-left: 10%;
+    font-weight: 900;
+    padding-top: 10px;
+}
+.terms {
+    color: white;
+    margin-left: 50px;
+}
+.subscribe {
+    color: white;
+    margin-left: 470px;
+    margin-top: -5em;
+    font-size: larger;
+}
